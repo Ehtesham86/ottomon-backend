@@ -2,12 +2,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const { swaggerUi, specs } = require('./swagger');
-const productRoutes = require('./Routes/productRoutes');
-const categories = require('./Routes/categoryRoutes')
-const subcategories = require('./Routes/subcategoryRoutes')
-const nestedsubcategories = require('./Routes/nestedsubcategoryRoutes');
-const login = require('./Routes/loginRoutes');
+const { swaggerUi, specs } = require('../swagger');
+const productRoutes = require('../Routes/productRoutes');
+const categories = require('../Routes/categoryRoutes')
+const subcategories = require('../Routes/subcategoryRoutes')
+const nestedsubcategories = require('../Routes/nestedsubcategoryRoutes');
+const login = require('../Routes/loginRoutes');
 const cors = require('cors');
 const app = express();
 const port = 5000 || process.env.PORT;
